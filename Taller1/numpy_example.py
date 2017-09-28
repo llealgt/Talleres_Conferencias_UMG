@@ -3,9 +3,6 @@ def create_matrix_train_set(max_number_of_images): # el parametro es para prueba
 	if max_number_of_images <= 0:
 		max_number_of_images = 5635;
 		
-	#image = tifffile.imread('/media/luisf/media/devongt/Kagle/UltrasoundNerveSegmentation/train/9_44.tif', key=0); #devuelve un array de pixeles de  420*580
-	#image = image.flatten();
-	#print np.shape(image);
 
 	image_list = os.listdir(train_data_path);
 	training_size = max_number_of_images; #len(image_list)/2; quitar el parametro y dejar el actual comentario 
